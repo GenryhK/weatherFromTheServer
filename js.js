@@ -1,14 +1,14 @@
-function gifAdd(wather) {
+function gifAdd(weather) {
 	let img = document.createElement(`img`);
 	img.setAttribute(`src`, `giphy.gif`);
 	document.body.appendChild(img);
-	return wather
+	return weather
 }
 
 
 
 let button = document.createElement(`button`);
-button.textContent = `get wather`;
+button.textContent = `get weather`;
 
 function func() {
 	fetch(`http://api.openweathermap.org/data/2.5/find?q=Kharkov&type=like&APPID=14bf1ba5d4f8aae8bae214d5bc0281b4`).then(respons => {
@@ -52,7 +52,7 @@ function func() {
 			document.body.removeChild(div);
 			let img = document.createElement(`img`);
 			img.setAttribute(`src`, `giphy.gif`);
-			document.body.appendChild(img)
+			func()
 		}
 
 		button.addEventListener(`click`, func2);

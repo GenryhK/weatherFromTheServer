@@ -1,0 +1,52 @@
+
+[{
+	"productName": "first bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "3754.750.jpg"
+}, {
+	"productName": "tow bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "7232.750.jpg"
+}, {
+	"productName": "three bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "9577.750.jpg"
+}, {
+	"productName": "four bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "12165.750.jpg"
+}, {
+	"productName": "five bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "12458.750.jpg"
+}, {
+	"productName": "six bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "13498.970.jpg"
+}, {
+	"productName": "seven bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "13645.750.jpg"
+}, {
+	"productName": "eight bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "13648.750.jpg"
+}, {
+	"productName": "nine bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "13656.750.jpg"
+}, {
+	"productName": "ten bike",
+	"productDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Quasi, sequi reprehenderit iure quod minus, fu",
+	"price": "10000",
+	"img": "13810.750.jpg"
+}]
