@@ -10,12 +10,16 @@ function gifAdd(weather) {
 let button = document.createElement(`button`);
 button.textContent = `get weather`;
 
-function func() {
-	fetch(`http://api.openweathermap.org/data/2.5/find?q=Kharkov&type=like&APPID=14bf1ba5d4f8aae8bae214d5bc0281b4`).then(respons => {
+
+
+//`http://api.openweathermap.org/data/2.5/find?q=Kharkov&type=like&APPID=14bf1ba5d4f8aae8bae214d5bc0281b4`
+
+function func(codToFetch) {
+	fetch(codToFetch).then(respons => {
 		let weather = respons.json();
 		return weather
-	}, error => {
-		alert(`error`)
+	}, error => {alert(`ERROR!!!! look details in  Console`)
+		throw new Error(`HI, server don't response now. Please refresh the page, good luck!!!!`)
 	}).then(weather => gifAdd(weather)).then(weather => setTimeout(function() {
 		document.body.removeChild(document.querySelector(`IMG`));
 
@@ -58,7 +62,30 @@ function func() {
 		button.addEventListener(`click`, func2);
 	}, 5000))
 };
-button.addEventListener(`click`, func);
+//let k=func.call(`http://api.openweathermap.org/data/2.5/find?q=Kharkov&type=like&APPID=14bf1ba5d4f8aae8bae214d5bc0281b4`)
+//button.addEventListener(`click`, func.bind(null,`http://api.openweathermap.org/data/2.5/find?q=Kharkov&type=like&APPID=14bf1ba5d4f8aae8bae214d5bc0281b4`));
+
+
+
+
+
+function getRandomNumber(min, max)
+
+{
+
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+
+};
+if (getRandomNumber(0, 1) == 1) {
+	button.addEventListener(`click`, func.bind(null,`http://api.openweathermap.org/data/2.5/find?q=Kharkov&type=like&APPID=14bf1ba5d4f8aae8bae214d5bc0281b4`));
+} else {
+	button.addEventListener(`click`, func.bind(null,`http://api.openweathermap.or/data/2.5/find?q=Kharkov&type=like&APPID=14bf1ba5d4f8aae8bae214d5bc0281b4`));
+};
+
+
+
+
+
 document.body.appendChild(button);
 
 
